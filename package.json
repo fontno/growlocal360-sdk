@@ -1,0 +1,36 @@
+{
+  "name": "growlocal360-sdk",
+  "version": "1.0.0",
+  "description": "Next.js SDK for GrowLocal360 webhook integration and static job page generation",
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "files": ["dist/", "!dist/__tests__/**"],
+  "scripts": {
+    "build": "tsc",
+    "dev": "tsc --watch",
+    "test": "jest",
+    "prepublishOnly": "npm run build"
+  },
+  "keywords": ["nextjs", "webhook", "jobs", "static-generation", "growlocal360"],
+  "author": "Brian Fontenot",
+  "license": "MIT",
+   "repository": {
+    "type": "git",
+    "url": "https://github.com/fontno/growlocal360-sdk.git"
+  },
+  "homepage": "https://github.com/fontno/growlocal360-sdk#readme",
+  "peerDependencies": {
+    "next": ">=13.0.0",
+    "react": ">=18.0.0"
+  },
+  "dependencies": {
+    "axios": "^1.6.0"
+  },
+  "devDependencies": {
+    "@types/jest": "^29.5.0",
+    "@types/node": "^20.0.0",
+    "jest": "^29.7.0",
+    "ts-jest": "^29.1.0",
+    "typescript": "^5.0.0"
+  }
+}
