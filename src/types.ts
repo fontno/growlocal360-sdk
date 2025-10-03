@@ -17,6 +17,7 @@ export interface JobData {
   job_services: string[];
   job_street: string;
   employee?: string;
+  job_employee?: string;
 }
 
 export interface WebhookPayload {
